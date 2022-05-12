@@ -1,6 +1,7 @@
 require 'faraday'
 require 'faraday/net_http'
 
+
 class MovieService
   def self.top_rated_movies
     top_rated_movies = '/3/movie/top_rated'
@@ -14,10 +15,4 @@ class MovieService
     end
   end
 
-  #
-  # def self.top_rated_movies_list
-  #   top_rated_movies[:results].map do |movie|
-  #     Movie.new(movie)
-  #   end
-  # end
-end
+end 
