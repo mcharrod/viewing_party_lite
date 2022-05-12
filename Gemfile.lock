@@ -73,6 +73,11 @@ GEM
     docile (1.4.0)
     erubi (1.10.0)
     execjs (2.8.1)
+
+    faraday (2.3.0)
+      faraday-net_http (~> 2.0)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (2.0.2)
     faraday (1.8.0)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
@@ -92,6 +97,7 @@ GEM
     faraday-net_http_persistent (1.2.0)
     faraday-patron (1.0.0)
     faraday-rack (1.0.0)
+
     ffi (1.15.4)
     figaro (1.2.0)
       thor (>= 0.14.0, < 2)
@@ -119,7 +125,12 @@ GEM
     mini_portile2 (2.6.1)
     minitest (5.14.4)
     msgpack (1.4.2)
+
+    net-http (0.2.2)
+      uri
+
     multipart-post (2.1.1)
+
     nio4r (2.5.8)
     nokogiri (1.12.5)
       mini_portile2 (~> 2.6.1)
@@ -239,6 +250,7 @@ GEM
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (2.1.0)
+    uri (0.11.0)
     web-console (3.7.0)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -263,6 +275,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   launchy
   listen (>= 3.0.5, < 3.2)
+  net-http
   pg (>= 0.18, < 2.0)
   pry
   puma (~> 3.11)

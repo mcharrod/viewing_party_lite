@@ -1,7 +1,9 @@
 class WelcomeController < ApplicationController
   def index
     @users = User.all
-    MovieService.conn
-    require "pry"; binding.pry
+
+
+    @top_movies = MovieFacade.top_rated_movies
+
   end
 end
