@@ -1,7 +1,10 @@
 class UsersController < ApplicationController
   def create
-    @user = User.create!({name: params[:name], email: params[:email]})
-    redirect_to "/users/#{@user.id}"
+    @user = User.create(name: params[:name], email: params[:email], password: params[:password], password_confirmation: params[:password_confirmation])
+    if user.save
+      redirect_to "/users/#{@user.id}"
+    else
+      #print user.errors
   end
 
   def new

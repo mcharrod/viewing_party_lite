@@ -7,6 +7,9 @@ RSpec.describe 'User Registration page' do
 
     fill_in('Name', with: 'John Doe')
     fill_in('Email', with: 'Johndoe@gmail.com')
+    fill_in('Password', with: 'coolpassword123')
+    fill_in('Password Confirmation', with: 'coolpassword123')
+    
     click_button('Create User')
 
     expect(current_path).to eq("/users/#{User.last.id}")
