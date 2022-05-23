@@ -57,8 +57,8 @@ group :test do
   gem 'launchy'
   gem 'simplecov'
   gem 'shoulda-matchers'
-
-
+  gem 'vcr'
+  gem 'webmock'
 end
 
 
