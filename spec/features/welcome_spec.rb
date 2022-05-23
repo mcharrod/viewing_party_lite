@@ -16,9 +16,9 @@ RSpec.describe 'landing page' do
   end
 
   it 'can list all register users' do
-    user1 = User.create(name: 'Homer Timmons', email: 'homertimmons@msn.com')
-    user2 = User.create(name: 'Phil Coll', email: 'p23745@gmail.com')
-    user3 = User.create(name: 'Elard Green', email: 'est55@hotmail.com')
+    user1 = User.create(name: 'Homer Timmons', email: 'homertimmons@msn.com', password: 'password123')
+    user2 = User.create(name: 'Phil Coll', email: 'p23745@gmail.com', password: 'password123')
+    user3 = User.create(name: 'Elard Green', email: 'est55@hotmail.com', password: 'password123')
 
     visit '/'
     expect(page).to have_content(user1.email)
